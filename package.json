@@ -1,6 +1,6 @@
 {
   "name": "vo-pages",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "author": "ljhhhhh",
   "main": "lib/vo-pages.umd.min.js",

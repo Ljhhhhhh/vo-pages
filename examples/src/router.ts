@@ -31,6 +31,11 @@ export default new Router({
       path: "/myConfig2",
       name: "myConfig2",
       component: () => import(/* webpackChunkName: "about" */ "./views/myConfig2.vue")
+    },
+    {
+      path: "/noData",
+      name: "noData",
+      component: () => import(/* webpackChunkName: "about" */ "./views/noData.vue")
     }
   ]
 });

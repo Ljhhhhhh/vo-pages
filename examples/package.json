@@ -1,7 +1,7 @@
 {
-  "name": "examples",
+  "name": "vo-pages-examples",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -12,7 +12,7 @@
     "axios-mock-adapter": "^1.17.0",
     "core-js": "^2.6.5",
     "mockjs": "^1.0.1-beta3",
-    "vo-pages": "^1.0.3",
+    "vo-pages": "^1.0.4",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",

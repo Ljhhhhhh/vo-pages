@@ -25,6 +25,12 @@
           <em></em>
         </router-link>
       </li>
+      <li>
+        <router-link to="/noData">
+          <span>无数据</span>
+          <em></em>
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>

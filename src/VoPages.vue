@@ -91,9 +91,9 @@ export default class TurnPage extends Vue {
     @Prop() private loadedAll!: boolean;
 
     // 监听等级
-    @Prop({
-      default: 1,
-    }) private probeType!: number;
+    // @Prop({
+    //   default: 1,
+    // }) private probeType!: 1 | 2 | 3;
 
     // 是否可点击
     @Prop({
@@ -231,7 +231,7 @@ export default class TurnPage extends Vue {
     initScroll() {
       if (!this.wrapper) return false;
       this.scroll = new BScroll(this.wrapper, {
-        probeType: this.probeType,
+        probeType: 1,
         click: this.click,
         pullUpLoad: this.pullUpHandle,
         pullDownRefresh: this.pullDownHandle,
