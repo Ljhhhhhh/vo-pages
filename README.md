@@ -11,7 +11,7 @@
 
 ## 使用
 
-- npm i vo-pages --save
+- `npm i vo-pages --save`
 - vo-pages组件父元素必须设置固定高度并填写属性overflow: hidden;如：
 
 ```css
