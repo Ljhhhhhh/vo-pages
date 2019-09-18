@@ -1,6 +1,7 @@
 {
   "name": "vo-pages",
-  "version": "1.0.4",
+  "version": "1.0.5",
+  "keywords": ["vuePages", "turnPages", "vue翻页", "移动端翻页", "翻页组件"],
   "private": false,
   "author": "ljhhhhh",
   "main": "lib/vo-pages.umd.min.js",
