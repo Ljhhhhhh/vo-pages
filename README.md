@@ -3,7 +3,7 @@
 - 在线体验：[pages.cixi518.com](http://pages.cixi518.com/)
 - 扫码体验：<br />
   <img src="https://user-gold-cdn.xitu.io/2019/9/18/16d437fbfa9f78f2?w=260&h=260&f=png&s=4129" width="200px" height="200px" />
-- (项目源码)[https://github.com/Ljhhhhhh/vo-pages]
+- [项目源码](https://github.com/Ljhhhhhh/vo-pages)
 
 ## 易用？高可定制？
 * 易用： 基础使用只需要列表数据、上拉事件、下拉事件就完成了翻页、刷新功能的开发
