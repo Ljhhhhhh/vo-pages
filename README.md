@@ -7,7 +7,8 @@
 * (项目源码)[https://github.com/Ljhhhhhh/vo-pages]
 
 ## 使用
-vo-pages组件父元素必须设置固定高度并填写属性overflow: hidden;如：
+* npm i vo-pages --save
+* vo-pages组件父元素必须设置固定高度并填写属性overflow: hidden;如：
 ```css
 height: 100vh;
 overflow: hidden;
@@ -98,3 +99,10 @@ components: {
 ##  TODO
 - [ ] 下拉图标（掘金下拉效果）
 - [ ] css自动加载
+---
+#### 如果各位大佬使用中遇到bug或不爽的点，还希望可以给提[issue](https://github.com/Ljhhhhhh/vo-pages/issues)，您的反馈使我进步，非常感谢。
+
+再次奉上[项目源码](https://github.com/Ljhhhhhh/vo-pages)
+
+
+
