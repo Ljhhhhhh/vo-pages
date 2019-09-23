@@ -1,6 +1,6 @@
 {
   "name": "vo-pages",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "keywords": ["vuePages", "paginates", "vue翻页", "移动端翻页", "翻页组件"],
   "private": false,
   "author": "ljhhhhh",

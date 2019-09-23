@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vo-pages :data="list" @pullingUp="pullingUp" @pullingDown="pullingDown" :loadedAll="loadedAll">
+    <vo-pages :data="list" @pullingUp="pullingUp" @pullingDown="pullingDown" :loadedAll="loadedAll" :pullDownNoTransform="true">
       <ul class="article-list">
         <li class="article" v-for="article in list" :key="article.id">
           <slot></slot>
@@ -28,7 +28,7 @@ import { ArticleParams } from "@/mock/article";
     // VoPages
   }
 })
-export default class App extends Vue {
+export default class pullUpToLoadMore extends Vue {
   list: ArticleParams[] = [];
 
   total: number = 0;

@@ -1,12 +1,6 @@
 <template>
   <div id="app">
-    <vo-pages
-      :data="list"
-      @pullingUp="pullingUp"
-      @pullingDown="pullingDown"
-      :config="config"
-      :loadedAll="loadedAll"
-    >
+    <vo-pages :data="list" @pullingUp="pullingUp" @pullingDown="pullingDown" :loadedAll="loadedAll" :pullDownNoTransform="true">
       <ul class="article-list">
         <li class="article" v-for="article in list" :key="article.id">
           <slot></slot>
@@ -27,14 +21,14 @@
 import { Component, Vue } from "vue-property-decorator";
 import axios from "axios";
 import { ArticleParams } from "@/mock/article";
-// import TurnPage from "vo-turn-page";
+// import VoPages from "vo-pages";
 
 @Component({
-  // components: {
-  //   TurnPage
-  // }
+  components: {
+    // VoPages
+  }
 })
-export default class myConfig extends Vue {
+export default class pullUpToLoadMore extends Vue {
   list: ArticleParams[] = [];
 
   total: number = 0;
@@ -45,13 +39,12 @@ export default class myConfig extends Vue {
 
   beforePullDown: boolean = true;
 
-  config: object = {
-    loading: "自定义加载中……",
-    loadedAllMsg: "自定义已加载全部",
-    pullUpMsg: "自定义上拉加载更多",
-    pullDownMsg: "自定义下拉刷新",
-    touchLeaveMsg: "自定义释放立即刷新"
-  };
+  // config: object = {
+  //   loadedAll: "已加载全部1",
+  //   pullUpMsg: "上拉加载更多1",
+  //   pullDownMsg: "下拉刷新1",
+  //   touchLeaveMsg: "释放立即刷新1"
+  // };
 
   created() {
     this.getList(false);
@@ -71,7 +64,8 @@ export default class myConfig extends Vue {
   async getList(loadMore = true) {
     const result = await axios.get("/article/list", {
       params: {
-        page: this.page
+        page: this.page,
+        limit: 3
       }
     });
 

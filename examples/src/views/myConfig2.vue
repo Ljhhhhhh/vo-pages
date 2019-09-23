@@ -29,7 +29,7 @@ import axios from "axios";
 import { ArticleParams } from "@/mock/article";
 
 @Component
-export default class App extends Vue {
+export default class myConfig2 extends Vue {
   list: ArticleParams[] = [];
 
   total: number = 0;

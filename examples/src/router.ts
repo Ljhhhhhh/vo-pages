@@ -9,18 +9,18 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "Home",
-      component: () => import(/* webpackChunkName: "about" */ "./views/Home.vue")
+      name: "home",
+      component: () => import(/* webpackChunkName: "about" */ "./views/home.vue")
     },
     {
-      path: "/PullDownToLoadMore",
-      name: "PullDownToLoadMore",
-      component: () => import("./views/PullDownToLoadMore.vue")
+      path: "/pullDownToLoadMore",
+      name: "pullDownToLoadMore",
+      component: () => import("./views/pullDownToLoadMore.vue")
     },
     {
-      path: "/PullUpToLoadMore",
-      name: "PullUpToLoadMore",
-      component: () => import(/* webpackChunkName: "about" */ "./views/PullUpToLoadMore.vue")
+      path: "/pullUpToLoadMore",
+      name: "pullUpToLoadMore",
+      component: () => import(/* webpackChunkName: "about" */ "./views/pullUpToLoadMore.vue")
     },
     {
       path: "/myConfig",
@@ -36,6 +36,11 @@ export default new Router({
       path: "/noData",
       name: "noData",
       component: () => import(/* webpackChunkName: "about" */ "./views/noData.vue")
+    },
+    {
+      path: "/autoLoadMore",
+      name: "autoLoadMore",
+      component: () => import(/* webpackChunkName: "about" */ "./views/autoLoadMore.vue")
     }
   ]
 });

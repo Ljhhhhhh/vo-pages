@@ -33,7 +33,7 @@ import { ArticleParams } from "@/mock/article";
   //   VoPages
   // }
 })
-export default class App extends Vue {
+export default class pullDownToLoadMore extends Vue {
   list: ArticleParams[] = [];
 
   total: number = 0;

@@ -2,13 +2,13 @@
   <div class="home">
     <ul>
       <li>
-        <router-link to="/PullDownToLoadMore">
+        <router-link to="/pullDownToLoadMore">
           <span>下拉加载</span>
           <em></em>
         </router-link>
       </li>
       <li>
-        <router-link to="/PullUpToLoadMore">
+        <router-link to="/pullUpToLoadMore">
           <span>上拉加载与下拉刷新</span>
           <em></em>
         </router-link>
@@ -28,6 +28,12 @@
       <li>
         <router-link to="/noData">
           <span>无数据</span>
+          <em></em>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/autoLoadMore">
+          <span>自动加载更多数据到满一屏</span>
           <em></em>
         </router-link>
       </li>
