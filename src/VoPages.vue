@@ -11,8 +11,12 @@
           {{defaultSetting.endLine}}
         </p>
         <p class="no-data_hint" v-if="!data.length && noDataHint">
-          <i class="iconfont icon-loading" v-if="!hasInit" />
-          {{hasInit ? defaultSetting.noData : defaultSetting.loading}}
+          <slot name="noData">
+            <template>
+              <i class="iconfont icon-loading" v-if="!hasInit" />
+              {{hasInit ? defaultSetting.noData : defaultSetting.loading}}
+            </template>
+          </slot>
         </p>
       </div>
       <div class="pullup-wrapper" :style="defaultSetting.pullUpStyle" v-if="pullUpHandle && data.length">
