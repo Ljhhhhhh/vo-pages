@@ -4,7 +4,7 @@
       <div class="pulldown-wrapper" v-if="pullDownHandle" :style="defaultSetting.pullDownStyle">
         <i :class="pullDownIcon"></i><span>{{pullDownMsg}}</span>
       </div>
-      <div ref="listSlot">
+      <div ref="listSlot" class="source-data__wrapper">
         <slot></slot>
         <p class="end-line" :style="defaultSetting.endLineStyle"
           v-if="defaultSetting.endLine && pullDownToLoadmore && data.length">
@@ -15,7 +15,7 @@
           {{hasInit ? defaultSetting.noData : defaultSetting.loading}}
         </p>
       </div>
-      <div class="pullup-wrapper" :style="defaultSetting.pullUpStyle" v-if="pullUpHandle">
+      <div class="pullup-wrapper" :style="defaultSetting.pullUpStyle" v-if="pullUpHandle && data.length">
         <div v-show="!isPullUp" class="before-trigger">
           <span class="pullup-txt" v-show="hasInit">
             {{loadedAll ? defaultSetting.loadedAllMsg : defaultSetting.pullUpMsg}}

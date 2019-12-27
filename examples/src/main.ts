@@ -11,7 +11,7 @@ Mock.start();
 
 Vue.config.productionTip = false;
 
-Vue.component('VoPages', VoPages)
+Vue.component("VoPages", VoPages);
 
 new Vue({
   router,

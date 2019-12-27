@@ -1,1 +1,1 @@
-declare module 'vo-pages';
+declare module "vo-pages";

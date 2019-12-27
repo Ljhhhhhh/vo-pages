@@ -10,17 +10,17 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: () => import(/* webpackChunkName: "about" */ "./views/home.vue")
+      component: () => import(/* webpackChunkName: "about" */ "./views/Home.vue")
     },
     {
       path: "/pullDownToLoadMore",
       name: "pullDownToLoadMore",
-      component: () => import("./views/pullDownToLoadMore.vue")
+      component: () => import("./views/PullDownToLoadMore.vue")
     },
     {
       path: "/pullUpToLoadMore",
       name: "pullUpToLoadMore",
-      component: () => import(/* webpackChunkName: "about" */ "./views/pullUpToLoadMore.vue")
+      component: () => import(/* webpackChunkName: "about" */ "./views/PullUpToLoadMore.vue")
     },
     {
       path: "/myConfig",

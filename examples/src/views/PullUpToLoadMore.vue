@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-    <vo-pages :data="list" @pullingUp="pullingUp" @pullingDown="pullingDown" :loadedAll="loadedAll" :pullDownNoTransform="true">
+    <vo-pages
+      :data="list"
+      @pullingUp="pullingUp"
+      @pullingDown="pullingDown"
+      :loadedAll="loadedAll"
+      :pullDownNoTransform="true"
+    >
       <ul class="article-list">
         <li class="article" v-for="article in list" :key="article.id">
           <slot></slot>
