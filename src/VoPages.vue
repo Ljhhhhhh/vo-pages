@@ -1,5 +1,5 @@
 <template>
-  <div class="box-wrapper" ref="wrapper">
+  <div class="box-wrapper" ref="wrapper" @click.stop.prevent>
     <div class="wrapper-child">
       <div class="pulldown-wrapper" v-if="pullDownHandle" :style="defaultSetting.pullDownStyle">
         <i :class="pullDownIcon"></i><span>{{pullDownMsg}}</span>
